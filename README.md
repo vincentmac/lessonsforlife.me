@@ -8,6 +8,7 @@ This frontend will make calls to a wordpress backend at [api.lessonsforlife.me](
 
 ## Requirements
 You will need mongodb installed and running.
+You will also need a `credentials` folder in the root of this app for aws credentials: `aws-credentials.json` and `aws-s3upload-credentials.json`
 
 ## Setup
 
