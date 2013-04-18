@@ -1,0 +1,41 @@
+//- post.jade
+extends index
+
+block head
+  include includes/socialMeta
+
+block page
+  article.post.container(id='post-#{id}')
+    .span8.offset2
+      header
+        h1.entry-title.visible-desktop #{ postTitle }
+        h3.entry-title.hidden-desktop #{ postTitle }
+
+      section.row
+        .span8!= content
+          //- | #{ content }
+      .row.timestamp
+        .span8
+          time.updated(datetime='#{ modified }', pubdate='#{ date }') Posted on #{ dateFormatted }
+      //- section.row
+      //-   .span8
+      //-     .visible-desktop
+      //-       - if (locals.previous_id)
+      //-         a.left.carousel-control(href='/p/#{ previous_id }', title='Previous Post') ‹
+      //-       - if (locals.next_id)
+      //-         a.right.carousel-control(href='/p/#{ next_id }', title='Next Post') ​​​​​›
+      //-     .hidden-desktop.ui-controls
+      //-       - if (locals.previous_id)
+      //-         a.btn.btn-info(href='/p/#{ previous_id }', title='Previous Post')
+      //-           i.icon-chevron-left.icon-white
+      //-           |  Previous Post
+      //-       - if (locals.next_id)
+      //-         a.btn.btn-info.pull-right(href='/p/#{ next_id }', title='Next Post')
+      //-           |   ​​​​​Next Post 
+      //-           i.icon-chevron-right.icon-white
+      footer
+        #lessons-social-inline
+
+//- block scripts
+  // script
+  //   var data = !{JSON.stringify(postData)}

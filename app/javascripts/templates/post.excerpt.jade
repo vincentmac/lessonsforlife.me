@@ -1,0 +1,26 @@
+//- post.excerpt.jade
+//- article.post.container(id='post-{{id}}')
+hr
+header.span8.offset2
+  .row
+    h2.entry-title.visible-desktop.shift-left
+      a(href='/p/{{id}}/{{slug}}') {{ title }}
+    h4.entry-title.hidden-desktop
+      a(href='/p/{{id}}/{{slug}}') {{ title }}
+  //- p.author.byline.vcard Posted by {{ author.name }}
+    //- a(href='/p/author/{{ author.name }}') {{ author.name }}
+- if (locals.hasImage)
+  .row
+    .span8.offset2
+      a(href='/p/{{id}}/{{slug}}')
+        img.aligncenter(src='{{ attachments[0].images.large.url }}', align='center')
+    //- .span4
+    //-   {{ excerpt }}
+- else
+  .row
+    .span8.offset2
+      {{ excerpt }}
+.row.timestamp
+  .span8.offset2
+    time.updated(datetime='{{ modified }}', pubdate='{{ date }}') Posted on {{ dateFormatted }}
+//- hr

@@ -1,0 +1,17 @@
+//- button.next-page.btn(href='#') Show More
+hr
+.span8.offset2
+  .row
+    - if (locals.currentPage < locals.lastPage)
+      //- button.next-page.btn(href='#') Show More Lessons {{currentPage}} {{lastPage}} #{locals.lastPage}
+      button.next-page.btn.btn-info
+        i.icon-chevron-down.icon-white
+        |  Show More Lessons
+    - else
+      button.next-page.btn.disabled No More Lessons
+      = ' '
+      a.btn.btn-info(href='/submit')
+        i.icon-plus.icon-white
+        |  Submit Your Lessons!
+  //- .content
+  //-   p Submit a new lesson

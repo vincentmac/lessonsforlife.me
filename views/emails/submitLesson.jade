@@ -1,0 +1,53 @@
+//- submitLesson.jade
+//- table(style="background-color: #f7f7f5; padding:30px; width: 700px;", bgcolor="#f7f7f5")
+//- img(src="http://static.lessonsforlifeproject.com/images/logos/lessonsforlife-email-logo.png", width="200",  alt="lessonsforlifeproject.com logo")
+//- img(src="http://static.lessonsforlifeproject.com/images/logos/snow-white-sig.png", width="201", alt="Snow White Bui :)")
+
+table(style="padding:30px; width: 700px;")
+  tr
+    td
+      table(style="font-family:'Myriad Pro','Lucida Grande','Lucida Sans Unicode','Lucida Sans', Geneva, Verdana, sans-serif;")
+        a(href="http://lessonsforlife.me")
+          img(src="http://static.lessonsforlifeproject.com/images/logos/lessons-for-life-hand-written-clear-350.png", width="350",  alt="lessonsforlife.me logo")
+        tr
+          td(style="font-family:'Myriad Pro','Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif; padding-top: 10px;")
+            div(style="font-size: 15px; line-height: 22px; color: #444444; margin:0 0 10px 0;")
+              //- p(style="font-size: 15px; line-height: 22px; color: #444444; margin:0 0 10px 0;")
+              p
+                | Hey #{name},
+              p
+                | We're on the verge of creating something special for our world.  I can feel it.
+              p
+                | It's so awesome that you've decided to share your life lessons with us - 
+                | thank you so much!  I'm confident your lessons will touch at least one 
+                | other person's life for the better.  Believe in the difference you're making, 
+                | because I do.
+              p
+                | Let's stay in touch.  Come visit 
+                a(href="http://lessonsforlife.me") our site 
+                | every week to see what other people from all over the world are sharing. 
+                | And if you haven't done so already, 
+                a(href="http://www.facebook.com/LessonsforLifeProject") "Like" us on Facebook 
+                | and 
+                a(href="http://twitter.com/#lessonsforlife") "Follow" us on Twitter.
+              p
+                | Together, we can create something beautiful.
+              div(style="margin-left:15px;")
+                img(src="http://static.lessonsforlifeproject.com/images/logos/snow-white-sig-200.png", width="200", alt="Snow White Bui :)")
+              //- div(style="margin-left:25px;")
+            div(style="color: #808080;")
+              p #{name}
+              p #{email}
+              p #{age}
+              p #{occupation}
+              p #{location}
+              p #{lesson1}
+              p #{lesson2}
+              p #{lesson3}
+              p Your private share url: wsdm.us/#{shorturl}
+              if locals.fileurl
+                img(src='#{fileurl}', style="max-width: 640px;")
+                p #{fileurl}
+                //- p(style="font-size: 15px; line-height: 22px; color: #808080; margin:0 0 10px 0;") #{lesson1}
+                //- p(style="font-size: 15px; line-height: 22px; color: #808080; margin:0 0 10px 0;") #{lesson2}
+                //- p(style="font-size: 15px; line-height: 22px; color: #808080; margin:0 0 10px 0;") #{lesson3}

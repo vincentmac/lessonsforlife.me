@@ -1,0 +1,22 @@
+We're on the verge of creating something special for our world.  I can feel it.
+
+It's so awesome that you've decided to share your life lessons with us - thank you so much!  I'm confident your lessons will touch at least one other person's life for the better.  Believe in the difference you're making, because I do.
+
+Let's stay in touch.  Come visit our site, http://lessonsforlife.me, every week to see what other people from all over the world are sharing. And if you haven't done so already, "Like" us on Facebook (http://www.facebook.com/LessonsforLifeProject) and follow us on Twitter(http://twitter.com/#lessonsforlife).
+
+Together, we can create something beautiful.
+
+Snow White Bui :)
+
+----------------
+
+#{name}
+#{email}
+#{age}
+#{occupation}
+#{location}
+#{fileurl}
+#{lesson1}
+#{lesson2}
+#{lesson3}
+Your private share url: wsdm.us/#{shorturl}

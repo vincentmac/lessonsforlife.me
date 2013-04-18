@@ -1,0 +1,132 @@
+//- submit.jade
+.container
+  .row
+    .span12
+      h2.visible-desktop Sharing Life's Greatest Lessons
+      h3.hidden-desktop Sharing Life's Greatest Lessons
+      h4 Two ways to share:
+  .row
+    .span12
+      .row
+        .span6
+          h4 The old-fashioned way:
+          ol
+            li Print the 
+              a(href='http://static.lessonsforlifeproject.com/assets/lessons-for-life-template.pdf', target='_blank') Lessons for Life template
+              .
+            li Mail your handwritten lessons to:
+              address Lessons for Life Project
+                br
+                | 8308 Campion Drive
+                br
+                | Los Angeles, CA 90045
+        .span6
+          h4 The creative way:
+          ol
+            li Handwrite your lessons on anything. 
+              br
+              | (Or print the online version of the 
+              a(href='http://static.lessonsforlifeproject.com/assets/lessons-for-life-template-online.pdf', target='_blank') template
+              | )
+            li Take a clear picture or scan of your lessons.
+            li Upload your lessons below.
+.container#submit-form
+  form.form-horizontal
+    fieldset
+      legend Submit Your Three Lessons
+      .control-group#control-name
+        label.control-label(for='input-name') Name
+        .controls
+          input#input-name(type='text', placeholder='enter your name', required='required')
+          span.help-inline
+      .control-group#control-email
+        label.control-label(for='input-email') Email
+        .controls
+          input#input-email(type='email', placeholder='name@example.com')
+          span.help-inline
+      .control-group#control-age
+        label.control-label(for='input-age') Age
+        .controls
+          input#input-age(type='text', placeholder='25', required='required')
+          span.help-inline
+      .control-group#control-occupation
+        label.control-label(for='input-occupation') Occupation
+        .controls
+          input#input-occupation(type='text', placeholder='What do you do for a living?')
+          span.help-inline
+      .control-group#control-location
+        label.control-label(for='input-location') Location
+        .controls
+          input#input-location(type='text', placeholder='Where do you live?')
+          span.help-inline
+      .control-group
+        .controls
+          p.muted We will not spam you or share your email address.
+            br
+            | Your age, location, and occupation will provide context for your lessons. :)
+            br
+            | If you do not want to disclose certain info, n/a is an acceptable answer.
+      legend Lessons 
+        span.lead.muted What are the three things you wish you knew when you were younger?
+      .control-group#control-lesson1
+        label.control-label(for='input-lesson1') Lessons One
+        .controls
+          textarea#input-lesson1.span5(row='5', placeholder='First Lesson', required='required')
+          span.help-inline
+      .control-group#control-lesson2
+        label.control-label(for='input-lesson2') Lessons Two
+        .controls
+          textarea#input-lesson2.span5(row='5', placeholder='Second Lesson', required='required')
+          span.help-inline
+      .control-group#control-lesson3
+        label.control-label(for='input-lesson3') Lessons Three
+        .controls
+          textarea#input-lesson3.span5(row='5', placeholder='Third Lesson', required='required')
+          span.help-inline
+          input#input-file-url(type='hidden', name='file-url')
+
+  //- Upload directly to Amazon S3
+  //- http://pjambet.github.com/blog/direct-upload-to-s3/
+  form#s3-upload.form-horizontal(action='https://s3-us-west-1.amazonaws.com/static.lessonsforlifeproject.com', method='post', enctype='multipart/form-data')
+    input(type='hidden', name='key', value='')
+    input(type='hidden', name='AWSAccessKeyId', value='')
+    input(type='hidden', name='acl', value='public-read')
+    input(type='hidden', name='policy', value='')
+    input(type='hidden', name='signature', value='')
+    input(type='hidden', name='Content-Type', value='')
+    input(type='hidden', name='success_action_status', value='201')
+    fieldset
+      .control-group#control-file
+        label.control-label(for='input-file') Upload your handwritten lessons
+        .controls
+          .fileupload.fileupload-new(data-provides='fileupload')
+            .input-append
+              .uneditable-input.span3
+                i.icon-file.fileupload-exists 
+                span.fileupload-preview
+              span.btn.btn-file
+                span.fileupload-new Select File
+                span.fileupload-exists Change
+                input#input-file(type='file', name='file')
+            span.help-inline
+        .controls
+          .progress.progress-striped.actve
+            .bar
+          
+      .control-group
+        .controls
+          button.btn#submit-lesson Submit Your Lessons
+  .row
+      .span12
+        .span10
+          #error-wrapper(hidden)
+  .row
+    .span12
+      p.muted Disclaimer: By submitting your lessons, you are giving lessonsforlifeproject.com permission 
+        | to publish your lessons to the larger community.
+          
+
+
+
+
+

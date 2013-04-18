@@ -1,0 +1,44 @@
+//- social.jade
+extends index
+
+block head
+  include includes/socialMeta
+
+block page
+  .jumbotron-transparent.subhead
+    .container
+      .row
+        .span8.offset2
+          h2.brand My Lessons for Life
+          br
+  .container
+    .row
+      .span8.offset2
+        h3 #{name}, #{occupation}, #{location}
+        //- h3 #{name}, #{age}, #{occupation}, #{location}
+    .row
+      .span8.offset2
+        .row
+          .span8
+            a(href='#{fileurl}')
+              img(src='#{fileurl}', align='center')
+          //- .span2
+          //-   #lessons-social-vertical
+          //-     include includes/userSubmitShare
+        //- .row
+        //-   .span8.lessons-user-share
+        //-     ol
+        //-       li #{ lesson1 }
+        //-       li #{ lesson2 }
+        //-       li #{ lesson3 }
+      .span2
+        #lessons-social-vertical
+          include includes/userSubmitShare
+    .row
+      .span8.offset2
+        .row
+          .span8.lessons-user-share
+            ol
+              li #{ lesson1 }
+              li #{ lesson2 }
+              li #{ lesson3 }

@@ -1,0 +1,19 @@
+//- favicons.jade
+
+//- Fav and Touch Icons
+//- See iOS Docs: http://developer.apple.com/library/ios/#documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html
+//- http://en.wikipedia.org/wiki/Favicon
+
+link(rel='shortcut icon', href='/images/ico/favicon.png')
+
+//- Old Format
+//- link(rel='apple-touch-icon-precomposed', sizes='114x114', href='/images/ico/apple-touch-icon-114-precomposed.png')
+//- link(rel='apple-touch-icon-precomposed', sizes='72x72', href='/images/ico/apple-touch-icon-72-precomposed.png')
+//- link(rel='apple-touch-icon-precomposed', href='/images/ico/apple-touch-icon-57-precomposed.png')
+
+//- New Format
+//- touch-icon-iphone is 57x57
+link(rel='apple-touch-icon', href='/images/ico/touch-icon-iphone.png')
+link(rel='apple-touch-icon', sizes='72x72',   href='/images/ico/touch-icon-ipad.png')
+link(rel='apple-touch-icon', sizes='114x114', href='/images/ico/touch-icon-iphone-retina.png')
+link(rel='apple-touch-icon', sizes='144x144', href='/images/ico/touch-icon-ipad-retina.png')

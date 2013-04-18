@@ -1,0 +1,31 @@
+//- submit.complete.jade
+//- .container
+//-   h2 Thanks for your Lessons
+.jumbotron-transparent.subhead
+  .container
+    .row
+      .span8.offset2
+        .row
+          .span7
+            h2.brand Thanks so much for your submission!
+            br
+          .span1
+            img.submit-owl(src='http://static.lessonsforlifeproject.com/images/logos/owl-144.png')
+        p.lead.brand We've made it easy for you to share your lessons with family and friends.
+      
+      
+    .row
+      .span8.offset2
+        .row
+          .span7
+            img(src='{{ fileurl }}', align='center')
+            br
+          .span1
+            .lessons-social-vertical.submit-social
+        .row
+          .span8.lessons-user-share
+            ol
+              li {{ lesson1 }}
+              li {{ lesson2 }}
+              li {{ lesson3 }}
+

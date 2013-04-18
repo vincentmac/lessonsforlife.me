@@ -1,0 +1,9 @@
+{
+  "name": "backbone.paginator",
+  "version": "0.0.0",
+  "commit": "d52898b949a5cca883d9d3c3d96bdc94d1a473b5",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/addyosmani/backbone.paginator.git"
+  }
+}

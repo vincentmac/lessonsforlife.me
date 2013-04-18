@@ -1,0 +1,12 @@
+article.page.container(id='post-{{id}}')
+  .span8.offset2
+    header
+      h1.entry-title.visible-desktop {{ title }}
+      h3.entry-title.hidden-desktop {{ title }}
+      //- p.author.byline.vcard Written by {{ author.name }}
+      //- time.updated(datetime='{{ modified }}', pubdate) Posted on {{ date }}
+      //- p.author.byline.vcard Written by 
+      //-   a(href='/p/author/{{ author.name }}') {{ author.name }}
+    .row
+      .span7
+        {{ content }}

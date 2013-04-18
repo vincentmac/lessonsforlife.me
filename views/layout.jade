@@ -1,0 +1,15 @@
+doctype 5
+html
+  head
+    title= title
+    include includes/head
+    block head
+  body
+    include includes/googleAnalytics
+    #fb-root
+    #wrap
+      block content
+      #push
+      block scripts
+      //- include includes/googleAnalytics
+    include includes/footer

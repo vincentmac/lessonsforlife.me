@@ -1,0 +1,22 @@
+extends layout
+
+block head
+
+block content
+  include includes/navbar
+  #app
+    block page
+  include includes/socialicons
+  //- #app
+  //-   block page
+
+  .container
+    .row
+      .span8.offset2
+        #disqus_thread
+
+block scripts
+  // script(data-main="/javascripts/lessons.min", src="/components/requirejs/require.js")
+  include includes/facebook
+  include includes/addthis
+  script(data-main="/javascripts/main", src="/components/requirejs/require.js")

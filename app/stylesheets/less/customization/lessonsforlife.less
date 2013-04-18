@@ -1,0 +1,233 @@
+// lessonsforlife.less
+
+// Base
+//-------------------------
+
+body { }
+
+
+
+// Header
+//-------------------------
+
+.banner {
+  width: 75%;
+}
+
+/* Fixed Topbar Navigation */
+// body.top-navbar.navbar-fixed-top { padding-top: 40px; }
+body.top-navbar { padding-top: 40px; }
+body.admin-bar .navbar-fixed-top { top: 28px; }
+// .navbar-fixed-top .wrapper { padding-top: 40px; }
+
+.brand,
+a.brand {
+  // font-family: 'Rock Salt', cursive;
+  // font-family: @brandFontFamily;
+  font-family: @headingsFontFamily;
+}
+
+.centered {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  float: none !important;
+  text-align: center;
+  & .lead {
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+}
+
+// Content
+//-------------------------
+
+#content { 
+  .navbar-fixed-top & {
+    // padding-top: 40px;
+  }
+}
+
+
+// Primary Content
+//-------------------------
+#main { }
+
+
+// Sidebar
+//-------------------------
+#sidebar { }
+
+// Posts Excerpts
+//-------------------------
+#lessons-excerpts article {
+  // padding-bottom: 15px;
+}
+
+.shift-left {
+  margin-left: -60px;
+}
+// Posts
+//-------------------------
+
+article .timestamp {
+  margin-top: 15px;
+  font-style: italic;
+}
+
+.hentry header { }
+.hentry time { }
+.hentry p.byline { }
+.hentry .entry-content { }
+.hentry footer { }
+
+// Pagination
+//-------------------------
+
+#pagination {
+  margin-bottom: 15px;
+}
+
+// Social Media Bar and Icon Header
+//-------------------------
+
+#social-icons {
+  // position: absolute;
+  position: fixed;
+  right: 15px;
+  top: 50px;
+  // font-size: 24px;
+  // padding: 25px;
+  // a {
+  //   // width: 35px;
+  //   // padding: 5px;
+  // }
+}
+
+.lessons-social-inline {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.lessons-social-vertical {
+  & .btn-small {
+    line-height: 19px;
+    padding: 0px 10px;
+    vertical-align: top;
+  }
+}
+
+.lessons-social-button {
+  min-width: 1px !important;
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.lessons-social-email {
+  width: 80px;
+  margin-right: 5px;
+}
+
+.lessons-social-facebook {
+  // width: 80px;
+  width: 136px;
+  margin-right: 5px;
+}
+
+.lessons-social-twitter {
+  width: 80px;
+  margin-right: 5px;
+}
+
+.lessons-social-plusone {
+  width: 65px;
+  margin-right: 5px;
+}
+
+.lessons-social-pinterest {
+  width: 80px;
+  margin-right: 5px;
+}
+
+.ui-controls {
+  padding: 25px 0px;
+}
+
+// Submit
+//-------------------------
+.submit-owl {
+  max-height: 100px;
+}
+
+.submit-social {
+  
+}
+
+.lessons-user-share {
+  padding-top: 25px;
+}
+// Footer
+//-------------------------
+
+#content-info { }
+
+// Sticky Footer
+//-------------------------
+// https://gist.github.com/1918937 - see this for info
+// http://ryanfait.com/resources/footer-stick-to-bottom-of-page/
+//-------------------------
+html, body {
+  height: 100%;
+}
+
+#wrap > #app {
+  padding-top: 40px;
+}
+
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by it's height */
+  margin: 0 auto -60px;
+}
+
+/* Set the fixed height of the footer here */
+#push,
+#footer {
+  height: 60px;
+}
+
+#footer {
+  overflow: hidden;
+  color: white;
+  background-color: @gray;
+  .container > {
+    padding-top: 20px;
+  }
+}
+
+#footer .brand {
+  // font-family: @brandFontFamily;
+  font-family: @headingsFontFamily;
+}
+#mc_embed_signup {
+  margin-top: -6px;
+}
+.avantio-logo {
+  width: 65px;
+  padding-bottom: 5px;
+}
+
+/* ==========================================================================
+   WordPress Generated Classes
+   See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+   ========================================================================== */
+
+.aligncenter { display: block; margin: 0 auto; }
+.alignleft { float: left; }
+.alignright { float: right; }
+figure.alignnone { margin-left: 0; margin-right: 0; }
+
+

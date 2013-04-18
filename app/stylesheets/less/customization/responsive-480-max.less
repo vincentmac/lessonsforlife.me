@@ -1,0 +1,71 @@
+// responsive-480-max.less
+
+// Landscape phones (iPhone OG/3G/3GS)
+//-------------------------
+@media (max-width: 480px) {
+  /* Remove padding above jumbotron */
+  // body {
+  //   padding-top: 70px;
+  // }
+  #wrap > #app {
+    padding-top: 50px;
+    // margin-top: 40px;
+  }
+
+  .navbar-fixed-top {
+    position: fixed;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .jumbotron-transparent {
+    & .centered {
+      & .lead {
+        font-size: 13px;
+      }
+    }
+  }
+
+  /* Change up some type stuff */
+  h2 small {
+    display: block;
+  }
+
+
+  /* center example sites */
+  .example-sites {
+    margin-left: 0;
+  }
+  .example-sites > li {
+    float: none;
+    display: block;
+    max-width: 280px;
+    margin: 0 auto 18px;
+    text-align: center;
+  }
+  .example-sites .thumbnail > img {
+    max-width: 270px;
+  }
+
+  /* Do our best to make tables work in narrow viewports */
+  table code {
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+
+  /* Modal example */
+  .modal-example .modal {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+  }
+
+  /* Unfloat the back to top in footer to prevent odd text wrapping */
+  #footer .pull-right {
+    float: none;
+  }
+
+}
